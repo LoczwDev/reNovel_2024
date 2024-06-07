@@ -1,0 +1,120 @@
+ul {
+  list-style: none;
+  margin: auto;
+  padding: auto;
+}
+ol {
+  list-style: auto;
+  margin: auto;
+  padding: auto;
+}
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 50px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hover-alt-text:hover::after {
+  content: attr(alt);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.owl-carousel .owl-item img {
+  width: auto;
+}
+.owl-carousel .owl-item .itemPhoto {
+  width: 100%;
+}
+.owl-carousel .owl-stage-outer {
+  padding-bottom: 20px;
+}
+@supports (background: paint(houdini)) {
+  .bg-animation:after {
+    animation: rotate-animation 10s linear infinite;
+    background: linear-gradient(
+      var(--angle),
+      #ec4899,
+      #407cff,
+      #ec4899,
+      #6366f1
+    );
+  }
+}
+.btn-shadow {
+  text-align: center;
+  text-transform: capitalize;
+  --bg-opacity: 1;
+  background-color: #4fd1c5;
+  background-color: rgba(79, 209, 197, var(--bg-opacity));
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-radius: 0.25rem;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.owl-stage-outer {
+  border-radius: 17px 0 17px 0;
+}
+.owl-nav {
+  position: absolute;
+  top: -66px;
+  right: 0px;
+  /* font-size: 50px; */
+  padding: 10px 15px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 36px !important;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: rgba(238, 130, 238, 0.5) !important;
+  /* padding: 10px 40px; */
+  border-radius: 50%;
+  color: violet;
+  opacity: 1;
+}
